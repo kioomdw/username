@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://InventoryScene"]
+
+[node name="Inventory" type="Control"]
+
+[node name="TitleLabel" type="Label" parent="."]
+position = Vector2(300, 50)
+text = "소지품"
+
+[node name="InventoryList" type="VBoxContainer" parent="."]
+position = Vector2(100, 150)
+
+[node name="ReturnButton" type="Button" parent="."]
+position = Vector2(50, 50)
+text = "돌아가기"
+
+
+func _ready():
+    setup_buttons()
+    load_inventory_slots()
+
+func setup_buttons():
+    $BackButton.connect("pressed", self, "_on_BackButton_pressed")
+
+func _on_BackButton_pressed():
+    go_to_home_scene()
+
+func go_to_home_scene():
+    var new_scene = load("res://HomeScene.tscn").instantiate()
+    get_tree().root.add_child(new_scene)
+    queue_free()
+
+func load_inventory_slots():
+    var slot_count = 16 # 4x4 그리드 기준
+    for i in range(slot_count):
+        var slot = TextureRect.new()
+        slot.texture = load("res://assets/ui/empty_slot.png") # 슬롯 비어있을 때 표시할 기본 이미지
+        slot.expand = true
+        slot.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+        $GridContainer.add_child(slot)

@@ -1,0 +1,12 @@
+[application]
+
+config/name="DarkFantasy"
+config/description="2D Turn-Based Dark Fantasy RPG"
+config/author="User"
+
+; AutoLoad singletons
+[autoload]
+SkillSystem="res://scripts/SkillSystem.gd"
+PassiveSystem="res://scripts/PassiveSystem.gd"
+CooldownManager="res://scripts/Utils/CooldownManager.gd"
+StatusEffectManager="res://scripts/Utils/StatusEffectManager.gd"

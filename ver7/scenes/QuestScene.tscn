@@ -1,0 +1,10 @@
+# Script placeholder for Quest
+extends Node
+
+[gd_scene load_steps=2 format=3 uid="uid://QuestScene"]
+
+[node name="Quest" type="Control"]
+
+[node name="TitleLabel" type="Label" parent="."]
+position = Vector2(300, 50)
+text = "퀘스트"

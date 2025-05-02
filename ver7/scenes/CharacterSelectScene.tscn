@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://CharacterSelectScene"]
+
+[node name="CharacterSelect" type="Control"]
+
+[node name="CharacterList" type="VBoxContainer" parent="."]
+position = Vector2(100, 100)
+
+[node name="ReturnButton" type="Button" parent="."]
+position = Vector2(600, 50)
+text = "돌아가기"

@@ -1,0 +1,77 @@
+[
+  {
+    "speaker": "Narrator",
+    "text": "…그리고 얼마 후, 마을은 다시 고요를 되찾은 듯했다."
+  },
+  {
+    "speaker": "Lilia",
+    "text": "여기까지 도와줘서… 고마워. 너 아니었으면, 다들…"
+  },
+  {
+    "speaker": "Protagonist",
+    "text": "……"
+  },
+  {
+    "speaker": "Lilia",
+    "text": "(그 눈빛… 감정이 없는 건 아닌데, 뭐랄까… 멈춰 있는 느낌이야.)"
+  },
+  {
+    "speaker": "System",
+    "text": "[어둠이 밀려오는 소리가 들린다.]"
+  },
+  {
+    "speaker": "Unknown",
+    "text": "────끄, 끄아악!!"
+  },
+  {
+    "speaker": "Lilia",
+    "text": "비명!? 다시 누가 습격당하고 있는 거야!"
+  },
+  {
+    "speaker": "Narrator",
+    "text": "두 사람은 소리가 들리는 방향으로 달려간다."
+  },
+  {
+    "speaker": "System",
+    "text": "[전투 시작: 약탈자 x2]"
+  },
+  {
+    "command": "battle",
+    "enemy_group": "chapter1_bandits"
+  },
+  {
+    "speaker": "Narrator",
+    "text": "싸움이 끝난 뒤, 한 남자가 쓰러져 있다."
+  },
+  {
+    "speaker": "Villager",
+    "text": "그 사람들… 마을 사람이 아니었어요…! 무슨 실험인가 뭔가… 막, 이상했어요…"
+  },
+  {
+    "speaker": "Lilia",
+    "text": "이상한 실험? 설마…"
+  },
+  {
+    "speaker": "System",
+    "text": "[릴리아의 눈이 흔들린다.]"
+  },
+  {
+    "speaker": "Lilia",
+    "text": "……안되겠어. 나, 이 마을을 떠날 거야."
+  },
+  {
+    "speaker": "Protagonist",
+    "text": "……(고개를 끄덕인다)"
+  },
+  {
+    "speaker": "Narrator",
+    "text": "그렇게 두 사람은 길을 나선다. 하지만 그들이 가야 할 앞길에는—"
+  },
+  {
+    "speaker": "System",
+    "text": "[스토리 다음 장으로 이동합니다.]"
+  },
+  {
+    "command": "goto_next_chapter"
+  }
+]

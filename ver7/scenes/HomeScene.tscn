@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://HomeScene"]
+
+[ext_resource path="res://HomeScript.gd" type="Script" id=1]
+[ext_resource path="res://assets/backgrounds/default_background.png" type="Texture2D" id=2]
+[ext_resource path="res://assets/characters/default_character.png" type="Texture2D" id=3]
+[ext_resource path="res://HomeMenuOverlay.tscn" type="PackedScene" id=4]
+
+[node name="Home" type="Control"]
+script = ExtResource(1)
+
+[node name="Background" type="TextureRect" parent="."]
+texture = ExtResource(2)
+stretch_mode = 2
+
+[node name="CharacterDisplay" type="TextureRect" parent="."]
+texture = ExtResource(3)
+position = Vector2(400, 250)
+stretch_mode = 2
+
+[node name="OpenMenuButton" type="Button" parent="."]
+position = Vector2(360, 600)
+text = "메뉴 열기"
+
+[node name="MenuOverlay" parent="." instance=ExtResource(4)]
+position = Vector2(0, 600)
+
+
+[node name="CharacterSelectButton" type="Button" parent="ButtonPanel"]
+text = "대표 캐릭터 설정"
+pressed = "go_to_character_select"
+
+[node name="SpeechBubble" type="Label" parent="."]
+position = Vector2(400, 150)
+text = ""
+visible = false
